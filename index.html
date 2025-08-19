@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="sl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valoran – AI mentor za moške</title>
+    <link rel="icon" type="image/png" href="Logo.png" />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- HERO -->
+      <section class="hero">
+        <img src="Logo.png" alt="Valoran Logo" class="logo" />
+        <h2 class="hero-title">Če si pripravljen postati nevaren moški – začni zdaj</h2>
+
+        <div class="hero-cta-wrap">
+          <!-- SAMO EN GUMB -->
+          <button id="cta-forge" class="btn-forge">Forge Yourself – 30-dnevni plan</button>
+        </div>
+      </section>
+
+      <!-- CHAT -->
+      <section id="chat" class="chat-container">
+        <div id="chat-box" class="chat-messages">
+          <div id="typing-indicator" class="typing hidden">Valoran tipka…</div>
+        </div>
+      </section>
+
+      <!-- CHAT FORM -->
+      <form id="chat-form" class="chat-form">
+        <textarea id="user-input" placeholder="Vnesi vprašanje…" autocomplete="off" rows="1"></textarea>
+        <button type="submit" class="send-button">Pošlji</button>
+      </form>
+
+      <!-- EMAIL GATE (MODAL) – se pokaže šele po kliku na Forge -->
+      <div id="email-modal-backdrop" class="modal-backdrop hidden"></div>
+      <div id="email-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <h3 id="modal-title" class="modal-title">Pridruži se Forge Yourself</h3>
+        
+        <form id="email-form" class="email-form">
+          <input type="email" id="email-input" placeholder="Email" required />
+          <button type="submit" class="btn-forge">Začni Forge</button>
+        </form>
+        <button id="modal-close" class="modal-close" aria-label="Zapri">×</button>
+      </div>
+
+      <button id="scroll-to-bottom" class="scroll-button">▼</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
